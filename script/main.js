@@ -24,3 +24,12 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+$(document).ready(function() {
+    $('a[href="#story"]').click(function(e) {
+        e.preventDefault(); 
+        var targetOffset = $('.about_section').offset().top;
+        $('html, body').animate({
+            scrollTop: targetOffset
+        }, 600);
+    });
+});
