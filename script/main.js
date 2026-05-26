@@ -33,3 +33,9 @@ $(document).ready(function() {
         }, 600);
     });
 });
+document.querySelector('.story-button').addEventListener('click', () => {
+  document.querySelector('#brand-story-section').scrollIntoView({ 
+    behavior: 'smooth', 
+    block: 'start' 
+  });
+});
