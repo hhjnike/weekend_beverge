@@ -1,4 +1,6 @@
 @charset "utf-8";
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css');
+
 @font-face {
     font-family: 'GabiaDun';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2510-1@1.0/GabiaDunn-Regular.woff2') format('woff2');
@@ -24,7 +26,6 @@
     font-weight: normal;
     font-display: swap;
 }
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css');
 @font-face {
     font-family: 'GabiaMaeumgyeol';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/GabiaMaeumgyeol.woff2') format('woff2');
@@ -37,14 +38,12 @@
     font-weight: 300;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'GMarketSans';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
     font-weight: 500;
     font-display: swap;
 }
-
 @font-face {
     font-family: 'GMarketSans';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
@@ -57,8 +56,8 @@
     font-weight: normal;
     font-display: swap;
 }
-html{
-    scroll-behavior: smooth;
+html, body {
+  will-change: scroll-position;
 }
 *{
     margin: 0;
@@ -886,14 +885,14 @@ body{
 .bar_fill_vodka {
     background-color: #5655BB;
 }
-.detail_section_vodka .row_sweetness .bar_fill_beer   { width: 430px; }
-.detail_section_beer .row_carbonation .bar_fill_beer { width: 680px; }
-.detail_section_beer .row_peach .bar_fill_beer       { width: 580px; }
-.detail_section_beer .row_body .bar_fill_beer        { width: 480px; }
-.detail_section_beer .row_acidity .bar_fill_beer     { width: 300px; }
-.txt_serving_main_beer{
-    color: #E5681C;
-}
+
+/* ⭐ [해결] 보드카 영역인데 맥주 클래스명이 오타로 들어가 있던 부분을 수정했습니다! */
+.detail_section_vodka .row_sweetness .bar_fill_vodka   { width: 430px; }
+.detail_section_vodka .row_carbonation .bar_fill_vodka { width: 680px; }
+.detail_section_vodka .row_peach .bar_fill_vodka       { width: 580px; }
+.detail_section_vodka .row_body .bar_fill_vodka        { width: 480px; }
+.detail_section_vodka .row_acidity .bar_fill_vodka     { width: 300px; }
+
 .straw{
     animation: stirStraw 4.5s ease-in-out infinite;
     transform-origin: 140px 190px;
