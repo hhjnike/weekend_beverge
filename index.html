@@ -24,7 +24,9 @@
                 <button type="button" class="btn btn_filled btn_lineup" onclick="document.getElementById('lineup').scrollIntoView({behavior: 'smooth'});">
                 라인업 보기
                 </button>
-                <a href="#story" class="btn btn_outlined">브랜드 스토리</a>
+                <a href="#story" class="btn btn_outlined" onclick="event.preventDefault(); document.getElementById('story').scrollIntoView({behavior: 'smooth'});">
+                브랜드 스토리
+                </a>
             </div>
         </div>
         <div class="hero_imges_container">
