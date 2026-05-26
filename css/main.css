@@ -1,0 +1,1013 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'GabiaDun';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2510-1@1.0/GabiaDunn-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'NewYork';
+    src: url('https://fonts.cdnfonts.com/s/72226/NewYork.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'YleeMemoriesNeverSleep';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/yleeMortalHeartImmortalMemory.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'GabiaSai';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2510-1@1.0/GabiaSai-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css');
+@font-face {
+    font-family: 'GabiaMaeumgyeol';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/GabiaMaeumgyeol.woff2') format('woff2');
+    font-weight: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'GMarketSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GMarketSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GMarketSans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: 700;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SfHambakneun';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/SF_HambakSnow.woff') format('woff');
+    font-weight: normal;
+    font-display: swap;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Pretendard","맑은고딕",sans-serif;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+.hero_section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(115deg, #FFD9E4 0%, #FFECD2 40%, #FFECD2 60%, #D9E8FA 100%);
+    padding: 60px 40px;
+}
+.hero_container{
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+.hero_content{
+    flex: 1.1;
+    max-width: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.sub_title{
+    font-family: 'GabiaDun', sans-serif;
+    font-size: 18px;
+    margin-top: 50px;
+    letter-spacing: 0.33em;
+    color: #F2ACAC;
+    display: block;
+}
+.brand_logo{
+    font-family: 'NewYork',serif;
+    font-size: 100px;
+    font-weight: 400;
+    color: #F27271;
+    line-height: 0.9;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.main_copy{
+    font-family: 'YleeMemoriesNeverSleep',cursive;
+    font-size: 65px;
+    color: #D94F4E;
+    margin-bottom: 25px;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+.descript_copy{
+    font-family: 'GabiaSai',sans-serif;
+    font-size: 30px;
+    color: #F27271;
+    line-height: 1.5;
+    font-weight: normal;
+    margin-bottom: 40px;
+    word-break: keep-all;
+}
+.btn_group{
+    display: flex;
+    gap: 16px;
+    margin-top: 10px;
+}
+.btn{
+    display: inline-block;
+    font-family: 'Pretendard',sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 14px 40px;
+    border-radius: 50px;
+    text-align: center;
+    transition: transform 0.2s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.2s ease;
+    border: none;
+    cursor: pointer;
+}
+.btn_filled{
+    background-color: #F27271;
+    color: #fff;
+    padding: 16px 42px;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+}
+.btn_filled:hover{
+    background-color: #F27271;
+    transform: translate(-4px,-4px);
+    box-shadow: 5px 5px 0px #c54e4d;
+}
+.btn_outlined{
+    background-color: transparent;
+    border: 2px solid #F27271;
+    color: #F27271;
+    padding: 14px 40px;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+}
+.btn_outlined:hover{
+    background-color: #F27271;
+    color: #fff;
+    transform: translate(-4px, -4px);
+    box-shadow: 5px 5px 0px #C54E4D;
+}
+.hero_imges_container{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
+}
+.main_product_img{
+    width: 100%;
+    max-width: 527px;
+    height: 527px;
+    object-fit: contain;
+    transition: transform 0.5s cubic-bezier(0.25, 1.45, 0.5, 1.25);
+    transition-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.main_product_img:hover{
+    transform: translateY(-25px);
+}
+.about_section{
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+.about_bg_box{
+    width: 1100px;
+    height: 700px;
+    position: relative;
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.about_bg_img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+.about_tag,
+.about_title,
+.about_descript{
+    position: relative;
+    z-index: 2;
+}
+.about_tag{
+    font-family: 'GabiaDun', sans-serif;
+    font-size: 18px;
+    color: #F2ACAC;
+    letter-spacing: 0.44em;
+    margin-bottom: 20px;
+}
+.about_title{
+    font-family: 'GabiaMaeumgyeol',serif;
+    font-size: 60px;
+    color: #D94F4E;
+    line-height: 1.2;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+.about_descript{
+    font-family: 'GabiaSai',sans-serif;
+    font-size: 25px;
+    color: #F27271;
+    line-height: 1.5;
+    font-weight: normal;
+    word-break: keep-all;
+}
+.product_section{
+    width: 100%;
+    padding: 120px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+.product_list{
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;
+}
+.product_wrapper{
+    perspective: 2000px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product_wrapper:hover {
+    z-index: 10; 
+}
+.product_card{
+    width: 350px;
+    height: 750px;
+    padding: 45px 35px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    box-sizing: border-box;
+    position: relative;
+    overflow: visible;
+    z-index: 1;
+    transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transform-style: preserve-3d;
+}
+.card_highball{
+    background: linear-gradient(135deg, #FFE9F3 0%, #FFCADA 100%);
+    box-shadow: 0 10px 30px rgba(255, 202, 218, 0.25);
+}
+.al_vol{
+    font-family: 'GMarketSans',sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #F2ACAC;
+    background-color: #fff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.prod_name{
+    font-family: 'SfHambakneun',sans-serif;
+    font-size: 60px;
+    color: #D94F4E;
+    line-height: 1.1;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.prod_desc{
+    font-family: 'GabiaSai', serif; 
+    font-size: 20px;
+    color: #F27271;
+    line-height: 1.5;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.prod_quote{
+    font-family: 'YleeMemoriesNeverSleep',serif;
+    font-size: 45px;
+    color: #f37777;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    letter-spacing: -0.04em;
+}
+.prod_tags{
+    font-family: 'GMarketSans',sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #F27271;
+    line-height: 1.6;
+}
+.product_card:hover{
+    transform: rotateY(-15deg) rotateX(10deg);
+    box-shadow: none;
+}
+.can_mockup{
+    position: absolute;
+    top: 25px;
+    right: 0;
+    width: 330px;
+    z-index: -1;
+    opacity: 0;
+    transform: scale(0.9) rotate(-5deg);
+    transition: all 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.product_card:hover .can_mockup{
+    opacity: 1;
+    right: -140px;
+    transform: scale(1) rotate(15deg);
+}
+.card_beer{
+    background: linear-gradient(135deg,#FCE7DE 0%, #FFDDC0 100%)
+}
+.al_vol_beer{
+    font-family: 'GMarketSans';
+    font-weight: 700;
+    font-size: 15px;
+    color: #F2ACAC;
+}
+.prod_name_beer{
+    font-family: 'SfHambakneun',sans-serif;
+    font-size: 60px;
+    color: #e94f3e;
+}
+.prod_desc_beer{
+    font-family: 'GabiaSai', serif; 
+    font-size: 20px;
+    color: #F77577;
+    line-height: 1.5;
+    font-weight: normal;
+}
+.prod_quote_beer{
+    font-family: 'YleeMemoriesNeverSleep',serif;
+    font-size: 40px;
+    color: #f37777;
+    letter-spacing: -0.04em;
+    margin-bottom: 25px;
+}
+.prod_tags_beer{
+    font-family: 'GMarketSans',sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #F27271;
+    line-height: 1.6;
+}
+.card_vodka{
+    background: linear-gradient(135deg,#DFD9FF 0%, #C6BBF9 100%);
+}
+.al_vol_vodka{
+    font-family: 'GMarketSans'; 
+    font-weight: 700; 
+    font-size: 15px; 
+    color: #9F8EDB; 
+}
+.prod_name_vodka{
+    font-family: 'SfHambakneun',sans-serif;
+    font-size: 60px;
+    color: #312A4C;
+}
+.prod_desc_vodka{
+    font-family: 'GabiaSai', serif; 
+    font-size: 20px;
+    color: #5655BB;
+    line-height: 1.5;
+    font-weight: normal;
+}
+.prod_quote_vodka{
+    font-family: 'YleeMemoriesNeverSleep',serif;
+    font-size: 40px;
+    color: #5655BB;
+    letter-spacing: -0.04em;
+    margin-bottom: 25px;
+}
+.prod_tags_vodka{
+    font-family: 'GMarketSans',sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: #5655BB;
+    line-height: 1.6;
+}
+.detail_section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding-bottom: 100px;
+}
+.detail_main_img{
+    width: 1200px;
+    height: 500px;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+.detail_main_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.detail_container{
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+.txt_perfect{
+    font-family: 'GabiaDun',serif;
+    font-size: 18px;
+    color: #F2ACAC;
+    letter-spacing: 0.44em;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+.txt_title{
+    font-family: 'SfHambakneun',sans-serif;
+    font-size: 72px;
+    color: #E23F2B;
+    font-weight: normal;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+.txt_subtitle{
+    font-family: 'GabiaSai',sans-serif;
+    font-size: 30px;
+    color: #F27271;
+    font-weight: normal;
+}
+.detail_divider{
+    width: 1100px;
+    height: 3px;
+    background-color: #f37777;
+    border: none;
+    margin: 40px 0;
+}
+.txt_profile_title{
+    font-family: 'GabiaDun',serif;
+    font-size: 18px;
+    color: #F2ACAC;
+    letter-spacing: 0.44em;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+.graph_list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+}
+.graph_row{
+    display: flex;
+    align-items: center;
+    width: 1100px;
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.graph_row:hover {
+    transform: translateX(5px);
+}
+.graph_label{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 320px;
+    flex-shrink: 0;
+}
+.label_eng{
+    font-family: 'SfHambakneun',sans-serif;
+    font-size: 45px;
+    color: #F27271;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+.label_kor{
+    font-family: 'GabiaSai',sans-serif;
+    font-size: 30px;
+    color: #F2ACAC;
+}
+.graph_bar_container{
+    position: relative;
+    width: 750px;
+    height: 20px;
+    margin-left: 30px;
+    flex-shrink: 0;
+}
+.bar_bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 750px;
+    height: 20px;
+    background-color: rgba(242, 114, 113, 0.3);
+    border-radius: 10px;
+}
+.bar_fill{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    background-color: #F27271;
+    border-radius: 10px;
+    width: 0;
+    transition:  width 1.1s cubic-bezier(0.1,1,0.1,1);
+}
+.graph_row:hover .bar_fill{
+    width: 700px;
+}
+.row_sweetness:hover .bar_fill {width: 700px;}
+.row_carbonation:hover .bar_fill{width: 670px;}
+.row_peach:hover .bar_fill{width: 680px;}
+.row_body:hover .bar_fill{width: 300px;}
+.row_acidity:hover .bar_fill{width: 230px;}
+.section_sub_title{
+    font-family: 'GabiaDun',serif;
+    font-size: 18px;
+    color: #F2ACAC;
+    letter-spacing: 0.44em;
+    display: block;
+    width: 1100px;
+    margin: 0 auto 40px auto;
+}
+.serving_container{
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 120px;
+}
+.serving_graphic{
+    width: 300px;
+    height: 300px;
+    flex-shrink: 0;
+}
+.serving_info .txt_serving_main{
+    font-family: 'SfHambakneun',sans-serif;
+    font-size: 42px;
+    color: #F27271;
+    line-height: 1.3;
+    font-weight: normal;
+}
+.muddler_stick{
+    transform-origin: 135px 236px;
+    animation: stirMuddler 3.5s ease-in-out infinite alternate;
+}
+@keyframes stirMuddler{
+    0% { transform: rotate(-4deg); }
+    100% { transform: rotate(4deg); }
+}
+.sparkle_star{
+    transform-origin: 129px 31px;
+    animation: twinkleStar 2.6s ease-in-out infinite alternate;
+}
+@keyframes twinkleStar {
+    0% {
+        transform: scale(0.9) rotate(-8deg);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1.05) rotate(12deg);
+        opacity: 1;
+    }
+}
+.pairing_section{
+    width: 1100px;
+    padding: 0;
+    align-items: center;
+}
+.txt_paring{
+    font-family: 'GabiaDun',serif;
+    font-size: 18px;
+    color: #F2ACAC;
+    letter-spacing: 0.44em;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+.pairing_container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.pairing_card{
+    position: relative;
+    width: 510px;
+    height: 300px;
+    background: linear-gradient(135deg, #FFCADA, #FDDFEF);
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.pairing_title{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    margin: 0;
+    font-family: 'NewYork',serif;
+    font-size: 43px;
+    font-weight: 400;
+    color: #e94f3e;
+    line-height: 1.2;
+    z-index: 2;
+}
+.pairing_img{
+    position: absolute;
+    right: -200px;
+    bottom: -10px;
+    width: 320px;
+    height: 320px;
+    object-fit: contain;
+    z-index: 1;
+    transition: right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    opacity: 0.85;
+    mix-blend-mode: multiply;
+}
+.pairing_card:hover .pairing_img{
+    right: -20px;
+}
+.pairing_emoji {
+  display: none;
+  position: absolute;
+  right: -220px;
+  bottom: -20px;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: radial-gradient(circle, #f0b0b0 10%, #FFCADA 75%);
+  align-items: center;
+  justify-content: center;
+  font-size: 110px;
+  z-index: 1;
+  transition: right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.pairing_card:hover .pairing_emoji {
+  right: -30px;
+}
+.occasion_section {
+    width: 1100px;
+    align-self: center;
+}
+.txt_occasion{
+    font-family: 'GabiaDun',serif;
+    font-size: 18px;
+    color: #F2ACAC;
+    letter-spacing: 0.44em;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+.occasion_container{
+    display: flex;
+    gap: 36px;
+    align-items: center;
+    justify-content: center;
+}
+.occasion_tag{
+    width: 215px;
+    height: 63px;
+    background: #FFE8EF;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'GabiaSai',serif;
+    font-size: 35px;
+    color: #F27271;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.occasion_tag:hover{
+    transform: translateY(4px);
+}
+.emoji_pop{
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%) translateY(15px);
+    font-size: 35px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.occasion_tag:hover .emoji_pop{
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+.txt_perfect_beer {
+    color: #F08A3C;
+}
+.txt_title_beer {
+    color: #E5681C;
+}
+.txt_subtitle_beer {
+    color: #F08A3C;
+}
+.detail_divider_beer {
+    background-color: #E5681C;
+}
+.txt_profile_title_beer {
+    color: #F08A3C;
+}
+.label_eng_beer {
+    color: #E5681C;
+}
+.label_kor_beer {
+    color: #FFD3A5;
+}
+.bar_bg_beer {
+    background-color: rgba(229, 104, 28, 0.3);
+}
+.bar_fill_beer {
+    background-color: #E5681C;
+}
+.detail_section_beer .row_sweetness .bar_fill_beer   { width: 430px; }
+.detail_section_beer .row_carbonation .bar_fill_beer { width: 680px; }
+.detail_section_beer .row_peach .bar_fill_beer       { width: 580px; }
+.detail_section_beer .row_body .bar_fill_beer        { width: 480px; }
+.detail_section_beer .row_acidity .bar_fill_beer     { width: 300px; }
+.txt_serving_main_beer{
+    color: #E5681C;
+}
+@keyframes tiltIce {
+    0%, 100% {
+        transform: translateX(0) translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateX(5px) translateY(-1px) rotate(2deg);
+    }
+}
+.ice {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: tiltIce 4s ease-in-out infinite;
+}
+.ice:nth-of-type(2n) {
+    animation-duration: 4.8s;
+    animation-delay: -1.2s;
+}
+.ice:nth-of-type(3n) {
+    animation-duration: 3.5s;
+    animation-delay: -2.5s;
+}
+@keyframes floatBubble {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-7px) scale(1.05);
+    }
+}
+.bubble {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: floatBubble 3s ease-in-out infinite;
+}
+.bubble:nth-of-type(2n) {
+    animation-duration: 3.6s;
+    animation-delay: -0.8s;
+}
+.bubble:nth-of-type(3n) {
+    animation-duration: 2.4s;
+    animation-delay: -1.5s;
+}
+@keyframes twinkleSparkle {
+    0%, 100% {
+        transform: scale(1) rotate(0deg);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(0.6) rotate(15deg);
+        opacity: 0.3;
+    }
+}
+.sparkle {
+    transform-box: fill-box;
+    transform-origin: center;
+    animation: twinkleSparkle 2.5s ease-in-out infinite;
+}
+.sparkle:nth-of-type(3n) {
+    animation-duration: 3.2s;
+    animation-delay: -0.5s;
+}
+.sparkle:nth-of-type(3n+1) {
+    animation-duration: 2s;
+    animation-delay: -1.4s;
+}
+.sparkle:nth-of-type(3n+2) {
+    animation-duration: 2.8s;
+    animation-delay: -2.1s;
+}
+.pairing_card_beer{
+    position: relative;
+    width: 510px;
+    height: 300px;
+    background: linear-gradient(135deg, #FFDDC0, #FCE7DE);
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.txt_occasion_beer{
+    color: #E5681C;
+}
+.occasion_tag_beer{
+    width: 215px;
+    height: 63px;
+    background: #FFDDC0;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'GabiaSai',serif;
+    font-size: 35px;
+    color: #E23F2B;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.detail_divider_vodka{
+    width: 1100px;
+    height: 3px;
+    background-color: #A08DDB;
+    border: none;
+    margin: 40px 0;
+}
+.txt_perfect_vodka {
+    color: #A08DDC;
+}
+.txt_title_vodka {
+    color: #5655BB;
+}
+.txt_subtitle_vodka {
+    color: #A08DDC;
+}
+.txt_profile_title_vodka {
+    color: #A08DDC;
+}
+.label_eng_vodka {
+    color: #5656B8;
+}
+.label_kor_vodka {
+    color: #A08DDC;
+}
+.bar_bg_vodka {
+    background-color: #E2E4F6;
+}
+.bar_fill_vodka {
+    background-color: #5655BB;
+}
+.detail_section_vodka .row_sweetness .bar_fill_beer   { width: 430px; }
+.detail_section_beer .row_carbonation .bar_fill_beer { width: 680px; }
+.detail_section_beer .row_peach .bar_fill_beer       { width: 580px; }
+.detail_section_beer .row_body .bar_fill_beer        { width: 480px; }
+.detail_section_beer .row_acidity .bar_fill_beer     { width: 300px; }
+.txt_serving_main_beer{
+    color: #E5681C;
+}
+.straw{
+    animation: stirStraw 4.5s ease-in-out infinite;
+    transform-origin: 140px 190px;
+}
+@keyframes stirStraw {
+  0%, 100% {
+    transform: rotate(-2deg) translate(0px, 0px);
+  }
+  50% {
+    transform: rotate(3deg) translate(1px, -1px);
+  }
+}
+.peach-ice {
+    transform-box: fill-box;
+    transform-origin: center;
+}
+.peach-ice.float-left {
+  animation: bobbingLeft 5s ease-in-out infinite;
+}
+.peach-ice.float-right {
+  animation: bobbingRight 5.5s ease-in-out infinite;
+}
+@keyframes bobbingLeft {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(-3px, 4px) rotate(-4deg);
+  }
+}
+@keyframes bobbingRight {
+  0%, 100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(3px, 2px) rotate(5deg);
+  }
+}
+.star {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: twinkle 2.2s ease-in-out infinite;
+}
+.star.delay-1 { animation-delay: 0s; }
+.star.delay-2 { animation-delay: 0.7s; }
+.star.delay-3 { animation-delay: 1.4s; }
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(0.85);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+.pairing_card_vodka{
+    position: relative;
+    width: 510px;
+    height: 300px;
+    background: linear-gradient(135deg, #A08DDC, #DFD9FF);
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.pairing_title_vodka{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    margin: 0;
+    font-family: 'NewYork',serif;
+    font-size: 43px;
+    font-weight: 400;
+    color: #5655BB;
+    line-height: 1.2;
+    z-index: 2;
+}
+.txt_occasion_vodka{
+    color: #A08DDC;
+}
+.occasion_tag_vodka{
+    width: 215px;
+    height: 63px;
+    background: #E2E4F6;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'GabiaSai',serif;
+    font-size: 35px;
+    color: #5656B6;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.occasion_tag_vodka_ro{
+    width: 283px;
+    height: 63px;
+    background: #E2E4F6;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'GabiaSai',serif;
+    font-size: 35px;
+    color: #5656B6;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.serving_info .txt_serving_main_vodka{
+    font-family: 'SfHambakneun',sans-serif;
+    font-size: 42px;
+    color: #5655BB;
+    line-height: 1.3;
+    font-weight: normal;
+}
